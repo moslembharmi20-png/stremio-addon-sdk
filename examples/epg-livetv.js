@@ -1,26 +1,26 @@
-#!/usr/bin/env node
-const { addonBuilder, serveHTTP } = require('../')
+#!/ بن/حسرت گره
+const { آد      ,        سروه }        =        نیاز('../')
 
-const SAMPLE_STREAM = 'http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4'
+const نمونه_جریان       =       'http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4'
 
-const CHANNELS = [
+const کانال ها       =       [
 	{
-		id: 'exampletv:news',
-		name: 'Example News',
-		poster: 'https://www.stremio.com/website/stremio-logo-small.png'
+		id    :      امپپفخبر،
+		نام     :       خبر      نمونه,
+		پوستر   :     'https://www.stremio.com/website/stremio-logo-small.png'
 	},
 	{
-		id: 'exampletv:sports',
-		name: 'Example Sports',
-		poster: 'https://www.stremio.com/website/stremio-logo-small.png'
+		id     :       امپپپتف   :     ورزش،ورزش,
+		نام     :       ورزش     نمونه,
+		پوستر: 'https://www.stremio.com/website/stremio-logo-small.png'
 	}
 ]
 
-const PROGRAMMES = {
-	'exampletv:news': [
-		{ title: 'Breakfast Briefing', hour: 6, durationHours: 3 },
-		{ title: 'Midday News', hour: 12, durationHours: 1 },
-		{ title: 'Evening News', hour: 18, durationHours: 1 },
+const برنامه      =      {
+	امپپف:  خبر  :    خبر    :      [
+		{ عنوان   :      خلاصه    خلاصهخلاصه، ساعت   :     6   ,      ساعت    ها :   ها  :    3 },
+		{ عنوان   :       خبر    روز  ,     ساعت   :     12   ,       ساعت    ها  : :    1 },
+		{ عنوان   :      خبر   شب  ,     ساعت   :     18   ,      ها :   ها  :    1 },
 		{ title: 'Night Desk', hour: 22, durationHours: 2 }
 	],
 	'exampletv:sports': [
